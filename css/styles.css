@@ -191,7 +191,7 @@ p {
   }
 
   .logo {
-    margin-right: 76px;
+    margin-right: 120px;
   }
 
   .nav-list {
@@ -346,6 +346,7 @@ p {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
   }
 }
 
@@ -391,6 +392,12 @@ p {
   margin-bottom: 8px;
 }
 
+.description-item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 /* ============== About Us Tablet ============== */
 
 @media only screen and (min-width: 768px) {
@@ -428,6 +435,10 @@ p {
     background: #f4f4fd;
     height: 112px;
   }
+
+  .description-item-text {
+    font-weight: 400;
+  }
 }
 /* =========== /About Us Section =========== */
 
@@ -446,6 +457,7 @@ p {
 .team-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 72px;
 }
 
@@ -463,11 +475,16 @@ p {
 }
 
 .team-item-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .team-item-text {
+  font-weight: 400;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -647,7 +664,7 @@ p {
 .page-footer {
   background: #2e2f42;
   padding-top: 97.5px;
-  padding-bottom: 104px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
@@ -691,7 +708,6 @@ p {
 .footer-action-header {
   margin-bottom: 16px;
   color: #fff;
-  font-weight: 500;
   display: flex;
   justify-content: center;
 }
@@ -700,7 +716,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 27px;
+  margin-bottom: 72px;
 }
 
 .footer-social-item {
@@ -799,9 +815,15 @@ p {
     align-items: baseline;
     gap: 24px;
     margin-bottom: 72px;
+  }
+
+  .footer-container {
     margin-left: 108px;
   }
 
+  .logo-footer {
+    justify-content: flex-start;
+  }
   .footer-logo-text {
     margin: 0;
   }
@@ -828,10 +850,6 @@ p {
     gap: 24px;
   }
 
-  .footer-action-wrapper {
-    margin-left: 108px;
-  }
-
   .footer-action-header {
     justify-content: flex-start;
   }
@@ -840,21 +858,23 @@ p {
 /* =========== Footer Desktop =========== */
 
 @media only screen and (min-width: 1158px) {
-  .footer-blok-wrapper {
-    gap: 0;
-  }
-
   .page-footer {
-    padding: 100px 0;
+    padding: 100px;
   }
 
   .footer-container {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
-  .footer-social-wrapper {
-    margin-left: 120px;
+  .footer-blok-wrapper {
+    margin: 0 auto;
+  }
+  .footer-firs-wrapper {
+    display: inline-flex;
+    gap: 120px;
   }
 
   .logo-footer {
@@ -868,14 +888,15 @@ p {
   .footer-action-wrapper {
     margin-left: 80px;
   }
+
+  .footer-action-header {
+    max-width: 75px;
+  }
+
   .footer-action-list {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .footer-blok-wrapper {
-    margin: 0 auto;
   }
 }
 /* =========== /Page Footer styles =========== */
@@ -1178,11 +1199,7 @@ p {
   background: #fff;
   width: 320px;
   min-height: 640px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 72px 16px 48px 16px;
+  padding: 72px 16px 40px 16px;
 }
 
 .is-open {
@@ -1249,7 +1266,8 @@ p {
   margin-bottom: 48px;
 }
 
-.mobile-menu-contacts-item {
+.mobile-menu-contacts-link {
+  font-style: normal;
   color: #434455;
   font-size: 20px;
   font-weight: 500;
@@ -1290,6 +1308,12 @@ p {
 .mobile-menu-social-link:focus {
   background-color: #31d0aa;
 }
-/* ============ /Mobile menu stiles ============== */
 
-/* =========== /Mobile Modal Menu =========== */
+/* ===== Tablet/Desktop ===== */
+
+@media only screen and (min-width: 768px) {
+  .mobile-backdrop {
+    display: none;
+  }
+}
+/* ============ /Mobile menu stiles ============== */
