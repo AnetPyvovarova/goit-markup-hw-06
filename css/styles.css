@@ -661,11 +661,11 @@ p {
 /* ================ Footer Mobile ================= */
 .page-footer {
   background: #2e2f42;
+  padding-top: 97px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
-  padding-top: 97px;
-  padding-bottom: 96px;
 }
 
 .footer-container {
@@ -864,9 +864,10 @@ p {
 
 @media only screen and (min-width: 1158px) {
   .footer-container {
-    padding: 101px 15px 100px 15px;
+    padding: 100px 15px 100px 15px;
     display: flex;
     flex-direction: row;
+    gap: 80px;
   }
 
   .footer-firs-wrapper {
@@ -1193,11 +1194,13 @@ p {
 }
 
 .mobile-modal {
+  width: 100%;
+  height: 100%;
   background: #fff;
   padding: 72px 16px 40px 16px;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 168px;
 }
 
 .is-open {
