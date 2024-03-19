@@ -814,9 +814,6 @@ p {
 
 @media only screen and (min-width: 768px) {
   .footer-container {
-    padding-top: 97px;
-    padding-right: 164px;
-    padding-bottom: 96px;
     padding-left: 108px;
   }
 
